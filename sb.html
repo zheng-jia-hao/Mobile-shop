@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 0;
+            padding: 20px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="d">
+        <ul class="a">
+            <li>xxx</li>
+            <li>xxx</li>
+            <li>xxx</li>
+            <li>xxx</li>
+            <li>xxx</li>
+        </ul>
+    </div>
+    <script>
+        var a  = document.querySelector(".a").children
+        console.log(a);
+        var b = Array.from(a)
+        for(let i = 0;i<b.length;i++) {
+            console.log(b[i].offsetTop);
+        }
+
+        var obj = {
+            length: 0,
+
+            addElem: function addElem (elem) {
+                // obj.length is automatically incremented
+                // every time an element is added.
+                [].push.call(this, elem);
+            }
+        };
+
+        // Let's add some empty objects just to illustrate.
+        obj.addElem({a:"xxx"});
+        obj.addElem({});
+        console.log(obj[0]);
+    </script>
+</body>
+</html>

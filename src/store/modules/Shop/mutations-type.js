@@ -1,0 +1,7 @@
+export const SAVE_GOODS = "save_goods"
+export const SAVE_INFO = "save_info"
+export const SAVE_RATINGS = "save_ratings"
+export const ADD_FOOD_COUNT = "add_food_count"
+export const DEL_FOOD_COUNT = "del_food_count"
+export const CLEAR_CARTSHOPS = "clear_cartshops"
+export const SAVE_CARTSHOPS = "save_cartshops"

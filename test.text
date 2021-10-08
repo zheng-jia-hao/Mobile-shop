@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var a = [{a:1},{b:2},{c:3},{d:4},{e:5},{f:6},{g:7},{h:8},{i:9},{j:10},{k:11},{l:12},{n:13},{m:14},{o:15},{p:16}];
+        function chunk(arr,length) {
+            let result = [];
+            
+            if( typeof length !== 'number' || length < 1  || length > arr.length || !!!(arr instanceof Array)) return arr;
+
+            if(Math.floor(length) === arr.length || Math.floor(length) === 1) {
+                while(arr.length) {
+                    result.push(arr.splice(0,1))
+                }
+                return result;
+            }
+
+            while(arr.length > arr.length/Math.floor(length)){
+                result.push(arr.splice(0,length));
+            }
+
+            console.log(result);
+            return result;
+        }
+       var b = chunk(a,8);
+       console.log(b);
+    </script> -->
+</body>
+</html>
